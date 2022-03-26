@@ -6,29 +6,23 @@
 <body>
   <div class="container">
     <h1>Currency Exchange</h1>
-    <label for="amount">Enter Amount:</label>
-      <br>
+    <label for="amount">Enter Amount (USD): </label>
       <input id="amount" type="text">
       <br>
-      <label for="currencyFrom">From:</label>
-      <select class="form-control" id="currencyFrom">
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="CNY">CNY</option>
-        <option value="JPY">JPY</option>
-        <option value="SEK">SEK</option>
-      </select>
       <br>
-      <label for="currencyTo">To:</label>
+      <label for="currencyTo">Convert to:</label>
       <select class="form-control" id="currencyTo">
-        <option value="USD">USD</option>
         <option value="EUR">EUR</option>
-        <option value="CNY">CNY</option>
+        <option value="INR">INR</option>
         <option value="JPY">JPY</option>
-        <option value="SEK">SEK</option>
+        <option value="MXN">MXN</option>
+        <option value="NZD">NZD</option>
+        <option value="DKK">DZZ</option>
+        <option value="CAD">CAD</option>
       </select>
       <br>
-      <button class="btn-success" id="exchangeCurrency" type="click">Convert</button>
+      <br>
+      <button class="btn-success" id="exchangeCurrency" type="click">Submit</button>
       <br>
       <br>
       <div class="showErrors"></div>
