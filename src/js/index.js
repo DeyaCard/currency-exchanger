@@ -13,8 +13,8 @@ function clearFields() {
 
 function getElements(response, amount) {
     if(response) {
-      console.log(amount)
-      const convertTo = (response.conversion_rate);
+      //console.log(amount)
+      const convertTo = (amount*response.conversion_rate);
       $('.showExchange').append(`The exchange rate is: ${convertTo}`);
     } else {
       $('.showErrors').text(`There was an error: ${response.message}`);
