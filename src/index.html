@@ -6,23 +6,25 @@
 <body>
   <div class="container">
     <h1>Currency Exchange</h1>
+    <form id="exchangeForm">
     <label for="amount">Enter Amount (USD): </label>
       <input id="amount" type="text">
       <br>
       <br>
       <label for="currencyTo">Convert to:</label>
       <select class="form-control" id="currencyTo">
-        <option value="EUR">EUR</option>
-        <option value="INR">INR</option>
-        <option value="JPY">JPY</option>
-        <option value="MXN">MXN</option>
-        <option value="NZD">NZD</option>
-        <option value="DKK">DZZ</option>
-        <option value="CAD">CAD</option>
+        <option value="EUR">Eurozone Euro</option>
+        <option value="INR">Indian Rupee</option>
+        <option value="JPY">Japanese Yen</option>
+        <option value="MXN">Mexican Peso</option>
+        <option value="NZD">New Zealand Dollar</option>
+        <option value="DKK">Denmark Krone</option>
+        <option value="CAD">Canadian Dollar</option>
       </select>
       <br>
       <br>
       <button class="btn-success" id="exchangeCurrency" type="click">Submit</button>
+    </form> 
       <br>
       <br>
       <div class="showErrors"></div>
